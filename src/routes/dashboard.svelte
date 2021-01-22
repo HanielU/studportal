@@ -1,4 +1,4 @@
-<!--<script context="module" ✂prettier:content✂="CgkvLyBmb3IgcHJlZmV0Y2hpbmcgZGF0YQoJZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIHByZWxvYWQoKSB7CgkJbGV0IHJlcyA9IGF3YWl0IHRoaXMuZmV0Y2goImh0dHA6Ly9sb2NhbGhvc3Q6NDAwMC8iKTsKCQlsZXQgQUxMX0RhdGEgPSBhd2FpdCByZXMuanNvbigpOwoKCQlpZiAocmVzLm9rKSB7CgkJCXJldHVybiB7IEFMTF9EYXRhIH07CgkJfSBlbHNlIHsKCQkJdGhyb3cgbmV3IEVycm9yKCJTdHVmZidzIG5vdCB3b3JraW5nIHlvIik7CgkJfQoJfQo=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=">{}</script>-->
+<!--<script context="module" ✂prettier:content✂="CgkvLyBmb3IgcHJlZmV0Y2hpbmcgZGF0YQoJZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIHByZWxvYWQoKSB7CgkJbGV0IHJlcyA9IGF3YWl0IHRoaXMuZmV0Y2goImh0dHA6Ly9sb2NhbGhvc3Q6NDAwMC8iKTsKCQlsZXQgQUxMX0RhdGEgPSBhd2FpdCByZXMuanNvbigpOwoKCQlpZiAocmVzLm9rKSB7CgkJCXJldHVybiB7IEFMTF9EYXRhIH07CgkJfSBlbHNlIHsKCQkJdGhyb3cgbmV3IEVycm9yKCJTdHVmZidzIG5vdCB3b3JraW5nIHlvIik7CgkJfQoJfQo=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=">{}</script>-->
 <script>
 	import Header from "../components/Header.svelte";
 	import IconRegistered from "../components/dashboard/icons/Registered.svelte";
@@ -23,6 +23,7 @@
 			if (id && password) {
 				const res = await fetch("https://d7b9e31f1417.ngrok.io", {
 					method: "POST",
+					mode: "no-cors",
 					headers: { "Content-Type": "application/json" },
 					body: JSON.stringify({ id, password }),
 				});
