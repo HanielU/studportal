@@ -5,7 +5,8 @@
 	"scripts": {
 		"dev": "sapper dev",
 		"build": "sapper build --legacy",
-		"start": "sapper export --legacy"
+		"export": "sapper export --legacy",
+		"start": "node __sapper__/build"
 	},
 	"dependencies": {
 		"compression": "^1.7.1",
